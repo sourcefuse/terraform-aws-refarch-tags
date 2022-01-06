@@ -11,7 +11,3 @@ variable "extra_tags" {
 variable "project" {
   description = "The name of the project being worked on."
 }
-
-variable "role" {
-  description = "The role of the asset in the project or environment."
-}
