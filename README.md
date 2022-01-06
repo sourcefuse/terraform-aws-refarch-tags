@@ -25,7 +25,6 @@ No resources.
 | <a name="input_environment"></a> [environment](#input\_environment) | The environment the resource will be created in. | `any` | n/a | yes |
 | <a name="input_extra_tags"></a> [extra\_tags](#input\_extra\_tags) | Additional tags to add to your resources. | `map(string)` | `{}` | no |
 | <a name="input_project"></a> [project](#input\_project) | The name of the project being worked on. | `any` | n/a | yes |
-| <a name="input_role"></a> [role](#input\_role) | The role of the asset in the project or environment. | `any` | n/a | yes |
 
 ## Outputs
 
