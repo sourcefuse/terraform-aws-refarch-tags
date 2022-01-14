@@ -37,6 +37,7 @@ jobs:
     runs-on:
       - refarch
       - dev
+      - docker
     name: checkov
     steps:
       - uses: actions/checkout@master
