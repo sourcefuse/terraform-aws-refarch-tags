@@ -6,7 +6,10 @@ on: pull_request_review
 
 jobs:
   labelWhenApproved:
-    runs-on: my-custom-runner
+    runs-on:
+      - dev
+      - poc2
+      - refarch
     steps:
       - name: Label when approved
         uses: pullreminders/label-when-approved-action@master

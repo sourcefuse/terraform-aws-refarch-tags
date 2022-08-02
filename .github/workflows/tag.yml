@@ -10,7 +10,10 @@ on:
 jobs:
   ## tag
   tag:
-    runs-on: my-custom-runner
+    runs-on:
+      - dev
+      - poc2
+      - refarch
     steps:
       - uses: actions/checkout@v2
 
