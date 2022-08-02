@@ -13,7 +13,10 @@ on:
 
 jobs:
   tflint:
-    runs-on: my-custom-runner
+    runs-on:
+      - dev
+      - poc2
+      - refarch
     name: tflint
     steps:
       - uses: actions/checkout@master
