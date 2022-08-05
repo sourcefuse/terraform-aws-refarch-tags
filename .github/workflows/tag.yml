@@ -11,8 +11,7 @@ jobs:
   ## tag
   tag:
     runs-on:
-      - dev
-      - poc2
+      - self-hosted
       - refarch
     steps:
       - uses: actions/checkout@v2

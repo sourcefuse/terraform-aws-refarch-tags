@@ -14,8 +14,7 @@ on:
 jobs:
   tflint:
     runs-on:
-      - dev
-      - poc2
+      - self-hosted
       - refarch
     name: tflint
     steps:
@@ -37,8 +36,7 @@ jobs:
   checkov:
     name: checkov
     runs-on:
-      - dev
-      - poc2
+      - self-hosted
       - refarch
     steps:
       - uses: actions/checkout@master
