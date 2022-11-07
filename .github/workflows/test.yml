@@ -13,9 +13,7 @@ on:
 
 jobs:
   tflint:
-    runs-on:
-      - self-hosted
-      - refarch
+    runs-on: ubuntu-latest
     name: tflint
     steps:
       - uses: actions/checkout@master
@@ -35,9 +33,7 @@ jobs:
 
   checkov:
     name: checkov
-    runs-on:
-      - self-hosted
-      - refarch
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
 
