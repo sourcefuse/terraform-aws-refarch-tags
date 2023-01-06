@@ -4,7 +4,9 @@ This module is responsible for managing the tags we use at SourceFuse when creat
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0, < 2.0 |
 
 ## Providers
 
@@ -22,9 +24,9 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_environment"></a> [environment](#input\_environment) | The environment the resource will be created in. | `any` | n/a | yes |
+| <a name="input_environment"></a> [environment](#input\_environment) | The environment the resource will be created in. | `string` | n/a | yes |
 | <a name="input_extra_tags"></a> [extra\_tags](#input\_extra\_tags) | Additional tags to add to your resources. | `map(string)` | `{}` | no |
-| <a name="input_project"></a> [project](#input\_project) | The name of the project being worked on. | `any` | n/a | yes |
+| <a name="input_project"></a> [project](#input\_project) | The name of the project being worked on. | `string` | n/a | yes |
 
 ## Outputs
 
