@@ -1,3 +1,4 @@
+---
 site_name: terraform-aws-refarch-tags
 site_description: Terraform module for common resource tags.
 plugins:
