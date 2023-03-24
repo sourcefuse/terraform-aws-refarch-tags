@@ -1,6 +1,18 @@
 # Terraform AWS: Reference Architecture - Tags
 
+[![Known Vulnerabilities](https://github.com/sourcefuse/terraform-aws-refarch-tags/actions/workflows/snyk.yaml/badge.svg)](https://github.com/sourcefuse/terraform-aws-refarch-tags/actions/workflows/snyk.yaml)
+
+## terraform-aws-refarch-tags
+
 This module is responsible for managing the tags we use at SourceFuse when creating resources in AWS.  
+
+## Usage
+
+```hcl
+module "terraform-aws-refarch-tags" {
+  source = "git::https://github.com/sourcefuse/terraform-aws-refarch-tags"
+}
+```
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
