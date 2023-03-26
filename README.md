@@ -11,6 +11,14 @@ This module is responsible for managing the tags we use at SourceFuse when creat
 ```hcl
 module "terraform-aws-refarch-tags" {
   source = "git::https://github.com/sourcefuse/terraform-aws-refarch-tags"
+
+  environment = var.environment
+  project     = "Example"
+
+  extra_tags = {
+    RepoName = "terraform-aws-refarch-ecs"
+    Example  = "true"
+  }
 }
 ```
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
