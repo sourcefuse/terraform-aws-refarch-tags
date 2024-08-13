@@ -15,12 +15,12 @@ This module is responsible for managing the tags we use at SourceFuse when creat
 ```hcl
 module "terraform-aws-arc-tags" {
   source      = "sourcefuse/arc-tags/aws"
-  version     = "1.2.4"
-  environment = var.environment
+  # version     = "x.x.x"  # we recommend pinning to a specific version
+  environment = "dev"
   project     = "Example"
 
   extra_tags = {
-    RepoName = "terraform-aws-refarch-ecs"
+    RepoName = "terraform-aws-arc-ecs"
     Example  = "true"
   }
 }
@@ -31,7 +31,7 @@ module "terraform-aws-arc-tags" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.4 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4, < 2.0.0 |
 
 ## Providers
 
